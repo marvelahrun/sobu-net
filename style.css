@@ -5,11 +5,35 @@
     box-sizing: border-box;
 }
 
+/* mode terang (default) */
 body {
-    font-family: Helvetica;
-    background: #f7f8fc;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
     display: block;
+    color: #222;
+    background: url("res/bg_terang.png") center/cover no-repeat;
+    transition: background 0.5s;
+}
+
+/* mode gelap */
+body.dark-mode {
+    color: #eee;
+    background: url("res/bg_gelap.png") center/cover no-repeat;
+    transition: background 0.5s;
+}
+
+.mode-btn {
+    position: fixed;
+    top: 100px;
+    right: 15px;
+    padding: 10px 14px;
+    font-size: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(8px);
 }
 
 .container {
@@ -84,11 +108,19 @@ body {
     padding-left: 0%;
 }
 
+body.dark-mode .subtitle {
+    color: #bbb
+}
+
 .description {
     margin-top: 10px;
     font-size: 0.95rem;
     color: #666;
     padding-left: 0%;
+}
+
+body.dark-mode .description {
+    color: #ccc;
 }
 
 .blog-btn {
@@ -118,7 +150,11 @@ body {
 .contact-text {
     margin-bottom: 15px;
     font-size: 1rem;
-    color: #444;
+    color: #222;
+}
+
+body.dark-mode .contact-text {
+    color: #fff;
 }
 
 .social-buttons {
