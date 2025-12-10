@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: helvetica;
+    font-family: helvetica, sans-serif;
     display: block;
     color: #222;
     background: url("res/bg_terang_pattern.png") top/100px repeat;

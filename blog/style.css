@@ -8,7 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: helvetica;
+    font-family: helvetica, sans-serif;
     display: block;
     color: #222;
     background: url("/res/bg_terang_pattern.png") top/100px repeat;
@@ -49,55 +49,44 @@ body {
 }
 
 /* Blog Page */
+
 .container {
     max-width: 600px;
-    margin: 0;
+    margin: 0 auto 30px auto;
     padding: 20px;
     width: 100%;
 }
 
-.title {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 25px;
-}
-
-.list {
-    display: flex;
-    flex-direction: column;
+#blog-container {
+    margin-top: 20px;
+    display: grid;
     gap: 20px;
 }
 
-.post {
-    background: white;
+.post-card {
+    display: block;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.post-title {
-    font-size: 1.4rem;
-}
-
-.post-description {
-    margin: 10px 0;
-    color: #555;
-}
-
-.post-link {
-    color: #0077ff;
+    border-radius: 20px;
+    background: white;
+    color: black;
     text-decoration: none;
-    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.2s;
 }
 
-.post-link:hover {
-    text-decoration: underline;
+.post-card:hover {
+    transform: translateY(-3px);
+}
+
+.post-card .thumb {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.date {
+    color: #666;
+    font-size: 0.85rem;
 }
 
 /* Mobile layout (screen width 600px or less) */
