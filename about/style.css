@@ -51,7 +51,7 @@ body {
 /* Header Layout */
 .header {
     display: flex;
-    max-width: 75%;
+    max-width: 700px;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -75,4 +75,36 @@ body {
 
 body.dark-mode .description {
     color: #ccc;
+}
+/* Mobile layout (screen width 600px or less) */
+@media (max-width: 600px) {
+    .header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .text-group {
+        margin-top: 15px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 0.95rem;
+    }
+
+    .site-header {
+        padding: 12px 16px;
+    }
+
+    .header-logo img {
+        height: 32px;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
 }
