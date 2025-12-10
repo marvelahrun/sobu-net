@@ -1,0 +1,49 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    display: block;
+    color: #222;
+    background: url("/res/bg_terang_pattern.png") top/10% repeat;
+    transition: background 0.5s;
+}
+
+/* Top Site Header */
+.site-header {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+    padding: 15px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.header-logo img {
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+}
+
+.header-nav .nav-link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    transition: 0.2s;
+}
+
+.header-nav .nav-link:hover {
+    color: #0077ff;
+}
