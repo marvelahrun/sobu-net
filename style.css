@@ -171,13 +171,31 @@ body.dark-mode .contact-text {
     transition: transform 0.2s, background 0.3s;
 }
 
+.icon {
+  width: 32px;
+  height: 32px;
+  filter: grayscale(0);
+  transition: 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+}
+
 .social-btn {
-    background: #0077ff;
+    object-fit: contain;
+    display: block;
     color: white;
 }
 
 .social-btn:hover {
-    background: #005fcc;
     transform: translateY(-2px);
 }
 
