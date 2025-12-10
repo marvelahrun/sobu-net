@@ -12,7 +12,7 @@ body {
     font-family: helvetica;
     display: block;
     color: #222;
-    background: url("res/bg_terang.png") center/cover no-repeat;
+    background: url("res/bg_terang_pattern.png") top/10% repeat;
     transition: background 0.5s;
 }
 
